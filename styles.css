@@ -35,6 +35,8 @@ body {
 
 .header--white {
     color: white;
+    /** Text Shadow for ADA */
+    text-shadow: 1px 1px black;
 }
 
 .btn {

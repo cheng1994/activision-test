@@ -12,20 +12,14 @@ $(function() {
     window.YT.ready(function() {
         player = new YT.Player('player', {
             events: {
-              'onReady': onPlayerReady,
               'onStateChange': onPlayerStateChange
             }
         });
     })
 
-    // The API will call this function when the video player is ready.
-    function onPlayerReady(event) {
-        event.target.playVideo();
-    }
-
-      // The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
+    // The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
     let done = false;
     function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
