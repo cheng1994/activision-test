@@ -10,7 +10,7 @@ body {
 }
 
 .bg {
-    background-image: url('./assets/hero_img_mobile_01.jpg');
+    background-image: url('./assets/Hero_img_mobile_01.jpg');
     height: 100%;
     width: 100%;
     background-size: cover;
