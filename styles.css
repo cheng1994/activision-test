@@ -125,6 +125,7 @@ body {
 
     .modal__body {
         width: 1080px;
+        max-width: 80%;
         height: 500px;
     }
 
